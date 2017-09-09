@@ -24,7 +24,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-3f-ju0">
                                 <rect key="frame" x="36" y="36" width="313" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97111350297927856" green="0.95286959409713745" blue="0.97840207815170288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97503465414047241" green="0.95679134130477905" blue="0.98232334852218628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -49,6 +49,9 @@
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Decimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLw-D5-dlY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Dt-4ak">
                                 <rect key="frame" x="25" y="399" width="75" height="75"/>
@@ -163,6 +166,9 @@
                                 <state key="normal" title="(">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="OpenParenthesis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVE-3x-WBr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSc-X1-YsS">
                                 <rect key="frame" x="191" y="233" width="75" height="75"/>
@@ -172,6 +178,9 @@
                                 <state key="normal" title=")">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CloseParenthesis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duF-mE-zs7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuN-6o-UfB">
                                 <rect key="frame" x="274" y="233" width="75" height="75"/>
@@ -181,6 +190,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHh-Yl-MrJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpO-ch-8ST">
                                 <rect key="frame" x="274" y="316" width="75" height="75"/>
@@ -190,6 +202,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi1-uG-PLi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-g5-Udf">
                                 <rect key="frame" x="274" y="399" width="75" height="75"/>
@@ -199,6 +214,9 @@
                                 <state key="normal" title="x">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ii4-d1-TUg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUL-1d-y8p">
                                 <rect key="frame" x="274" y="482" width="75" height="75"/>
@@ -208,6 +226,9 @@
                                 <state key="normal" title="÷">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFF-EV-3HH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRR-Dm-D6Y">
                                 <rect key="frame" x="191" y="482" width="75" height="75"/>
@@ -241,19 +262,30 @@
                                 <state key="normal" title="+/-">
                                     <color key="titleColor" red="0.33308371113989632" green="0.33308371113989632" blue="0.33308371113989632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Negative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdW-KO-pHD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97473540439999995" green="0.95494638249999997" blue="0.98383021260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="Add" destination="AuN-6o-UfB" id="XW9-RY-6RE"/>
                         <outlet property="Clear" destination="iZY-Rm-aUe" id="uAz-ik-3Ym"/>
+                        <outlet property="CloseParenthesis" destination="XSc-X1-YsS" id="lBX-vA-8bi"/>
+                        <outlet property="DecimalPoint" destination="Bdf-Bw-4ff" id="Im3-fv-AE6"/>
+                        <outlet property="Divide" destination="XUL-1d-y8p" id="Dua-bQ-rEY"/>
                         <outlet property="Eight" destination="oUm-DB-Hpa" id="a38-4n-mSg"/>
                         <outlet property="Five" destination="4Dc-Lv-eCv" id="kU3-Of-k97"/>
                         <outlet property="Four" destination="fDB-Dt-4ak" id="RGz-ow-D40"/>
+                        <outlet property="Multiply" destination="5ad-g5-Udf" id="9xm-v2-gUR"/>
+                        <outlet property="Negative" destination="Vuc-yI-gNJ" id="9SL-Y8-gVV"/>
                         <outlet property="Nine" destination="AJ0-4L-Zhg" id="sni-fv-GR9"/>
                         <outlet property="NumericDisplay" destination="f2U-3f-ju0" id="tEA-46-Yhf"/>
                         <outlet property="One" destination="J3W-Ty-Q1G" id="Kwt-lf-nA9"/>
+                        <outlet property="OpenParenthesis" destination="gbm-Tx-1uL" id="qjm-rc-ldM"/>
                         <outlet property="Seven" destination="aAl-Ia-aYy" id="qOP-qf-bOl"/>
+                        <outlet property="Subtract" destination="qpO-ch-8ST" id="BcT-yg-12c"/>
                         <outlet property="Three" destination="mRR-Dm-D6Y" id="ez5-bB-dpn"/>
                         <outlet property="Two" destination="RV1-zb-ByD" id="fLe-pv-TUi"/>
                         <outlet property="Zero" destination="3wQ-DQ-heC" id="zUW-GS-Kn1"/>

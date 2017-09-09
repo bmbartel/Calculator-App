@@ -25,6 +25,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var Zero: UIButton!
     @IBOutlet weak var NumericDisplay: UILabel!
     @IBOutlet weak var Clear: UIButton!
+    @IBOutlet weak var OpenParenthesis: UIButton!
+    @IBOutlet weak var CloseParenthesis: UIButton!
+    @IBOutlet weak var Add: UIButton!
+    @IBOutlet weak var Subtract: UIButton!
+    @IBOutlet weak var Multiply: UIButton!
+    @IBOutlet weak var Divide: UIButton!
+    @IBOutlet weak var DecimalPoint: UIButton!
+    @IBOutlet weak var Negative: UIButton!
     
     
     
@@ -85,6 +93,47 @@ class ViewController: UIViewController {
         NumericDisplay.text = ""
     }
     
+    @IBAction func OpenParenthesis(_ sender: Any) {
+        let OpenParenthesis = "("
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + OpenParenthesis
+    }
+    @IBAction func CloseParenthesis(_ sender: Any) {
+        let CloseParenthesis = ")"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CloseParenthesis
+    }
+    
+    @IBAction func Add(_ sender: Any) {
+        let Add = "+"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Add
+    }
+    @IBAction func Subtract(_ sender: Any) {
+        let Subtract = "-"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Subtract
+    }
+    @IBAction func Multiply(_ sender: Any) {
+        let Multiply = "*"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Multiply
+    }
+    @IBAction func Divide(_ sender: Any) {
+        let Divide = "/"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Divide
+    }
+    @IBAction func Decimal(_ sender: Any) {
+        let Decimal = "."
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Decimal
+    }
+    @IBAction func Negative(_ sender: Any) {
+        let Negative = "-"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Negative
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
