@@ -25,36 +25,34 @@ class ViewController: UIViewController {
     
     // If button is pressed, chance numeric display to that value.
     @IBAction func ButtonOnePressed(_ sender: Any) {
-        NumericDisplay.text = "1"
+        NumericDisplay.text = "1\(NumericDisplay)"
     }
-    
     @IBAction func ButtonTwoPressed(_ sender: Any) {
-        NumericDisplay.text = "2"
+        NumericDisplay.text = "2\(NumericDisplay)"
     }
     @IBAction func ButtonThreePressed(_ sender: Any) {
-        NumericDisplay.text = "3"
+        NumericDisplay.text = "3\(NumericDisplay)"
     }
     @IBAction func ButtonFourPressed(_ sender: Any) {
-        NumericDisplay.text = "4"
+        NumericDisplay.text = "4\(NumericDisplay)"
     }
     @IBAction func ButtonFivePressed(_ sender: Any) {
-        NumericDisplay.text = "5"
+        NumericDisplay.text = "5\(NumericDisplay)"
     }
     @IBAction func ButtonSixPressed(_ sender: Any) {
-        NumericDisplay.text = "6"
+        NumericDisplay.text = "6\(NumericDisplay)"
     }
     @IBAction func ButtonSevenPressed(_ sender: Any) {
-        NumericDisplay.text = "7"
+        NumericDisplay.text = "7\(NumericDisplay)"
     }
-    
     @IBAction func ButtonEightPressed(_ sender: Any) {
-        NumericDisplay.text = "8"
+        NumericDisplay.text = "8\(NumericDisplay)"
     }
     @IBAction func ButtonNinePressed(_ sender: Any) {
-        NumericDisplay.text = "9"
+        NumericDisplay.text = "9\(NumericDisplay)"
     }
     @IBAction func ButtonZeroPressed(_ sender: Any) {
-        NumericDisplay.text = "0"
+        NumericDisplay.text = "0\(NumericDisplay)"
     }
     
     override func viewDidLoad() {
