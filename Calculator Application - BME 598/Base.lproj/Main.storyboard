@@ -21,18 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-Ty-Q1G">
-                                <rect key="frame" x="25" y="294" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.10163249314981826" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" red="0.99772443451350401" green="0.98334665831127022" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ButtonOnePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ZM-0y-g1S"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-zb-ByD">
                                 <rect key="frame" x="108" y="294" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -174,7 +162,7 @@
                                     <color key="titleColor" red="0.99772443450000003" green="0.98334665830000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-3f-ju0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-3f-ju0">
                                 <rect key="frame" x="36" y="36" width="302" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9747354044466231" green="0.95494638249848096" blue="0.98383021262025583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -194,6 +182,18 @@
                                     <action selector="ButtonThreePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ae-Ld-BFH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-Ty-Q1G" userLabel="One">
+                                <rect key="frame" x="25" y="294" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10163249314981826" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.99772443451350401" green="0.98334665831127022" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonOnePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLt-x7-XnR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32527121113989632" green="0.32527121113989632" blue="0.32527121113989632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -203,7 +203,7 @@
                         <outlet property="Four" destination="fDB-Dt-4ak" id="RGz-ow-D40"/>
                         <outlet property="Nine" destination="AJ0-4L-Zhg" id="sni-fv-GR9"/>
                         <outlet property="NumericDisplay" destination="f2U-3f-ju0" id="tEA-46-Yhf"/>
-                        <outlet property="One" destination="J3W-Ty-Q1G" id="eZd-pY-fYc"/>
+                        <outlet property="One" destination="J3W-Ty-Q1G" id="Kwt-lf-nA9"/>
                         <outlet property="Seven" destination="aAl-Ia-aYy" id="qOP-qf-bOl"/>
                         <outlet property="Three" destination="mRR-Dm-D6Y" id="ez5-bB-dpn"/>
                         <outlet property="Two" destination="RV1-zb-ByD" id="fLe-pv-TUi"/>

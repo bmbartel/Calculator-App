@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     // References to the Buttons and Label
   
+
     @IBOutlet weak var One: UIButton!
     @IBOutlet weak var Two: UIButton!
     @IBOutlet weak var Three: UIButton!
@@ -27,34 +28,55 @@ class ViewController: UIViewController {
     // If button is pressed, chance numeric display to that value.
 
     @IBAction func ButtonOnePressed(_ sender: Any) {
-        NumericDisplay.text = "1"
+       let One = "1"
+       let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + One
     }
+
     @IBAction func ButtonTwoPressed(_ sender: Any) {
-        NumericDisplay.text = "2"
+        let Two = "2"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Two
     }
     @IBAction func ButtonThreePressed(_ sender: Any) {
-        NumericDisplay.text = "3"
+        let Three = "3"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Three
     }
     @IBAction func ButtonFourPressed(_ sender: Any) {
-        NumericDisplay.text = "4"
+        let Four = "4"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Four
     }
     @IBAction func ButtonFivePressed(_ sender: Any) {
-        NumericDisplay.text = "5"
+        let Five = "5"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Five
     }
     @IBAction func ButtonSixPressed(_ sender: Any) {
-        NumericDisplay.text = "6"
+        let Six = "6"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Six
     }
     @IBAction func ButtonSevenPressed(_ sender: Any) {
-        NumericDisplay.text = "7"
+        let Seven = "7"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Seven
     }
     @IBAction func ButtonEightPressed(_ sender: Any) {
-        NumericDisplay.text = "8"
+        let Eight = "8"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Eight
     }
     @IBAction func ButtonNinePressed(_ sender: Any) {
-        NumericDisplay.text = "9"
+        let Nine = "9"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Nine
     }
     @IBAction func ButtonZeroPressed(_ sender: Any) {
-        NumericDisplay.text = "0"
+        let Zero = "0"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Zero
     }
     
     override func viewDidLoad() {
