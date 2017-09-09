@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-3f-ju0">
-                                <rect key="frame" x="36" y="36" width="313" height="72"/>
+                                <rect key="frame" x="31" y="133" width="313" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97503465414047241" green="0.95679134130477905" blue="0.98232334852218628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -145,6 +145,9 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.97473540439999995" green="0.95494638249999997" blue="0.98383021260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EqualTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fo5-28-ZPl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-4L-Zhg">
                                 <rect key="frame" x="191" y="316" width="75" height="75"/>
@@ -266,16 +269,26 @@
                                     <action selector="Negative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdW-KO-pHD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axs-z7-Z6n">
+                                <rect key="frame" x="31" y="28" width="313" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97503465410000001" green="0.95679134129999999" blue="0.98232334850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97473540439999995" green="0.95494638249999997" blue="0.98383021260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="Add" destination="AuN-6o-UfB" id="XW9-RY-6RE"/>
+                        <outlet property="Answer" destination="Axs-z7-Z6n" id="utY-wj-D3d"/>
                         <outlet property="Clear" destination="iZY-Rm-aUe" id="uAz-ik-3Ym"/>
                         <outlet property="CloseParenthesis" destination="XSc-X1-YsS" id="lBX-vA-8bi"/>
                         <outlet property="DecimalPoint" destination="Bdf-Bw-4ff" id="Im3-fv-AE6"/>
                         <outlet property="Divide" destination="XUL-1d-y8p" id="Dua-bQ-rEY"/>
                         <outlet property="Eight" destination="oUm-DB-Hpa" id="a38-4n-mSg"/>
+                        <outlet property="EqualTo" destination="bt3-il-a6p" id="T8o-fW-cUH"/>
                         <outlet property="Five" destination="4Dc-Lv-eCv" id="kU3-Of-k97"/>
                         <outlet property="Four" destination="fDB-Dt-4ak" id="RGz-ow-D40"/>
                         <outlet property="Multiply" destination="5ad-g5-Udf" id="9xm-v2-gUR"/>
@@ -294,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="156" y="113"/>
         </scene>
     </scenes>
 </document>

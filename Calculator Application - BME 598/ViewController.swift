@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -33,8 +34,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var Divide: UIButton!
     @IBOutlet weak var DecimalPoint: UIButton!
     @IBOutlet weak var Negative: UIButton!
+    @IBOutlet weak var Answer: UILabel!
     
-    
+    @IBOutlet weak var EqualTo: UIButton!
     
     // If button is pressed, chance numeric display to that value.
 
@@ -133,6 +135,14 @@ class ViewController: UIViewController {
         let Negative = "-"
         let AlreadyInDisplay = NumericDisplay.text
         NumericDisplay.text = AlreadyInDisplay! + Negative
+    }
+    
+    @IBAction func EqualTo(_ sender: Any) {
+        
+        let AlreadyInDisplay = NumericDisplay.text
+        let _ = NSExpression(forVariable: AlreadyInDisplay!)
+        
+ 
     }
     
     override func viewDidLoad() {
