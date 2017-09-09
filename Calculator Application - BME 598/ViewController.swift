@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // References to the Buttons and Label
+  
     @IBOutlet weak var One: UIButton!
     @IBOutlet weak var Two: UIButton!
     @IBOutlet weak var Three: UIButton!
@@ -24,35 +25,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var NumericDisplay: UILabel!
     
     // If button is pressed, chance numeric display to that value.
+
     @IBAction func ButtonOnePressed(_ sender: Any) {
-        NumericDisplay.text = "1\(NumericDisplay)"
+        NumericDisplay.text = "1"
     }
     @IBAction func ButtonTwoPressed(_ sender: Any) {
-        NumericDisplay.text = "2\(NumericDisplay)"
+        NumericDisplay.text = "2"
     }
     @IBAction func ButtonThreePressed(_ sender: Any) {
-        NumericDisplay.text = "3\(NumericDisplay)"
+        NumericDisplay.text = "3"
     }
     @IBAction func ButtonFourPressed(_ sender: Any) {
-        NumericDisplay.text = "4\(NumericDisplay)"
+        NumericDisplay.text = "4"
     }
     @IBAction func ButtonFivePressed(_ sender: Any) {
-        NumericDisplay.text = "5\(NumericDisplay)"
+        NumericDisplay.text = "5"
     }
     @IBAction func ButtonSixPressed(_ sender: Any) {
-        NumericDisplay.text = "6\(NumericDisplay)"
+        NumericDisplay.text = "6"
     }
     @IBAction func ButtonSevenPressed(_ sender: Any) {
-        NumericDisplay.text = "7\(NumericDisplay)"
+        NumericDisplay.text = "7"
     }
     @IBAction func ButtonEightPressed(_ sender: Any) {
-        NumericDisplay.text = "8\(NumericDisplay)"
+        NumericDisplay.text = "8"
     }
     @IBAction func ButtonNinePressed(_ sender: Any) {
-        NumericDisplay.text = "9\(NumericDisplay)"
+        NumericDisplay.text = "9"
     }
     @IBAction func ButtonZeroPressed(_ sender: Any) {
-        NumericDisplay.text = "0\(NumericDisplay)"
+        NumericDisplay.text = "0"
     }
     
     override func viewDidLoad() {
