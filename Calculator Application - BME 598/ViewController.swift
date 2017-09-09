@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var Nine: UIButton!
     @IBOutlet weak var Zero: UIButton!
     @IBOutlet weak var NumericDisplay: UILabel!
+    @IBOutlet weak var Clear: UIButton!
+    
+    
     
     // If button is pressed, chance numeric display to that value.
 
@@ -78,6 +81,10 @@ class ViewController: UIViewController {
         let AlreadyInDisplay = NumericDisplay.text
         NumericDisplay.text = AlreadyInDisplay! + Zero
     }
+    @IBAction func Clear(_ sender: Any) {
+        NumericDisplay.text = ""
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +96,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
