@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     // References to the Buttons and Label
-  
 
     @IBOutlet weak var One: UIButton!
     @IBOutlet weak var Two: UIButton!
@@ -24,6 +23,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var Nine: UIButton!
     @IBOutlet weak var Zero: UIButton!
     @IBOutlet weak var NumericDisplay: UILabel!
+    @IBOutlet weak var Clear: UIButton!
+    @IBOutlet weak var OpenParenthesis: UIButton!
+    @IBOutlet weak var CloseParenthesis: UIButton!
+    @IBOutlet weak var Add: UIButton!
+    @IBOutlet weak var Subtract: UIButton!
+    @IBOutlet weak var Multiply: UIButton!
+    @IBOutlet weak var Divide: UIButton!
+    @IBOutlet weak var DecimalPoint: UIButton!
+    @IBOutlet weak var Negative: UIButton!
+    @IBOutlet weak var Answer: UILabel!
+    
+    @IBOutlet weak var EqualTo: UIButton!
     
     // If button is pressed, chance numeric display to that value.
 
@@ -78,6 +89,62 @@ class ViewController: UIViewController {
         let AlreadyInDisplay = NumericDisplay.text
         NumericDisplay.text = AlreadyInDisplay! + Zero
     }
+    @IBAction func Clear(_ sender: Any) {
+        NumericDisplay.text = ""
+    }
+    
+    @IBAction func OpenParenthesis(_ sender: Any) {
+        let OpenParenthesis = "("
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + OpenParenthesis
+    }
+    @IBAction func CloseParenthesis(_ sender: Any) {
+        let CloseParenthesis = ")"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CloseParenthesis
+    }
+    
+    @IBAction func Add(_ sender: Any) {
+        let CurrentOpperand = "+"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
+    }
+    @IBAction func Subtract(_ sender: Any) {
+        let CurrentOpperand = "-"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
+    }
+    @IBAction func Multiply(_ sender: Any) {
+        let CurrentOpperand = "*"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
+    }
+    @IBAction func Divide(_ sender: Any) {
+        let CurrentOpperand = "/"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
+    }
+    @IBAction func Decimal(_ sender: Any) {
+        let Decimal = "."
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Decimal
+    }
+    @IBAction func Negative(_ sender: Any) {
+        let Negative = "-"
+        let AlreadyInDisplay = NumericDisplay.text
+        NumericDisplay.text = AlreadyInDisplay! + Negative
+    }
+    
+    
+    @IBAction func EqualTo(_ sender: Any) {
+    
+        let Equation:String = NumericDisplay.text!
+        let Format = NSExpression(format:Equation)
+        let Numeric = Format.expressionValue(with: nil, context: nil) as? NSNumber
+        let Output = Numeric?.doubleValue
+        Answer.text = String(describing: Output)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +156,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
