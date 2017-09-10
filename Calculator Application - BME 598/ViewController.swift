@@ -91,6 +91,7 @@ class ViewController: UIViewController {
     }
     @IBAction func Clear(_ sender: Any) {
         NumericDisplay.text = ""
+        Answer.text = ""
     }
     
     @IBAction func OpenParenthesis(_ sender: Any) {
@@ -142,8 +143,8 @@ class ViewController: UIViewController {
         let Format = NSExpression(format:Equation)
         let Numeric = Format.expressionValue(with: nil, context: nil) as? NSNumber
         let Output = Numeric?.doubleValue
-        Answer.text = String(describing: Output)
-        
+        let ToAnswerLabel = String(describing: Output!)
+        Answer.text = ToAnswerLabel
     }
     
     override func viewDidLoad() {
