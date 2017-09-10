@@ -507,6 +507,7 @@
 				CA6D7ABF1F6332B100FCA5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA6D7AC01F6332B100FCA5E1 /* Build configuration list for PBXNativeTarget "Calculator Application - BME 598Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				CA6D7AC21F6332B100FCA5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA6D7AC31F6332B100FCA5E1 /* Build configuration list for PBXNativeTarget "Calculator Application - BME 598UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				CA6D7AC51F6332B100FCA5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

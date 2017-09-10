@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import Foundation
 
 class ViewController: UIViewController {
 
     // References to the Buttons and Label
-  
 
     @IBOutlet weak var One: UIButton!
     @IBOutlet weak var Two: UIButton!
@@ -107,24 +105,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Add(_ sender: Any) {
-        let Add = "+"
+        let CurrentOpperand = "+"
         let AlreadyInDisplay = NumericDisplay.text
-        NumericDisplay.text = AlreadyInDisplay! + Add
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
     }
     @IBAction func Subtract(_ sender: Any) {
-        let Subtract = "-"
+        let CurrentOpperand = "-"
         let AlreadyInDisplay = NumericDisplay.text
-        NumericDisplay.text = AlreadyInDisplay! + Subtract
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
     }
     @IBAction func Multiply(_ sender: Any) {
-        let Multiply = "*"
+        let CurrentOpperand = "*"
         let AlreadyInDisplay = NumericDisplay.text
-        NumericDisplay.text = AlreadyInDisplay! + Multiply
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
     }
     @IBAction func Divide(_ sender: Any) {
-        let Divide = "/"
+        let CurrentOpperand = "/"
         let AlreadyInDisplay = NumericDisplay.text
-        NumericDisplay.text = AlreadyInDisplay! + Divide
+        NumericDisplay.text = AlreadyInDisplay! + CurrentOpperand
     }
     @IBAction func Decimal(_ sender: Any) {
         let Decimal = "."
@@ -137,12 +135,15 @@ class ViewController: UIViewController {
         NumericDisplay.text = AlreadyInDisplay! + Negative
     }
     
+    
     @IBAction func EqualTo(_ sender: Any) {
+    
+        let Equation:String = NumericDisplay.text!
+        let Format = NSExpression(format:Equation)
+        let Numeric = Format.expressionValue(with: nil, context: nil) as? NSNumber
+        let Output = Numeric?.doubleValue
+        Answer.text = String(describing: Output)
         
-        let AlreadyInDisplay = NumericDisplay.text
-        let _ = NSExpression(forVariable: AlreadyInDisplay!)
-        
- 
     }
     
     override func viewDidLoad() {
