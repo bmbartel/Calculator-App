@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     // References to the Buttons and Label
-
     @IBOutlet weak var One: UIButton!
     @IBOutlet weak var Two: UIButton!
     @IBOutlet weak var Three: UIButton!
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var EqualTo: UIButton!
     
 
-    // If button is pressed, chance numeric display to that value.
+    // If button is pressed, change numeric display to that value. Also add to itself. The varaible AlreadyInDisplay checks what is already in the label and makes sure to keep it in the display along with the next pressed button.
 
     @IBAction func ButtonOnePressed(_ sender: Any) {
        let One = "1"
@@ -139,7 +138,7 @@ class ViewController: UIViewController {
         Answer.text = Minus + Solution!
     }
     
-    
+    // This function uses NSExpression to take the string within the Equation Label(NumericDisplay), formats it as an equation and then computes it. It then converts it to type double and back to a string to be placed back in the label.
     @IBAction func EqualTo(_ sender: Any) {
     
         let Equation:String = NumericDisplay.text!
