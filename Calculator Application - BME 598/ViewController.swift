@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var DecimalPoint: UIButton!
     @IBOutlet weak var Negative: UIButton!
     @IBOutlet weak var Answer: UILabel!
-    
     @IBOutlet weak var EqualTo: UIButton!
     
 
@@ -145,9 +144,9 @@ class ViewController: UIViewController {
     
         let Equation:String = NumericDisplay.text!
         let Format = NSExpression(format:Equation)
-        let Numeric = Format.expressionValue(with: nil, context: nil) as? NSNumber
-        let Output = Numeric?.doubleValue
-        let ToAnswerLabel = String(describing: Output!)
+        let Numeric = Format.expressionValue(with: nil, context: nil) as? Double
+        let Output = Double(Numeric!)
+        let ToAnswerLabel = String(describing: Output)
         Answer.text = ToAnswerLabel
     }
     
