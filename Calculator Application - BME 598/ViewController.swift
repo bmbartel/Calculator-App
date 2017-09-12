@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var EqualTo: UIButton!
     
+
     // If button is pressed, chance numeric display to that value.
 
     @IBAction func ButtonOnePressed(_ sender: Any) {
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
     }
     @IBAction func Clear(_ sender: Any) {
         NumericDisplay.text = ""
-        Answer.text = ""
+        Answer.text = "0"
     }
     
     @IBAction func OpenParenthesis(_ sender: Any) {
@@ -131,9 +132,12 @@ class ViewController: UIViewController {
         NumericDisplay.text = AlreadyInDisplay! + Decimal
     }
     @IBAction func Negative(_ sender: Any) {
-        let Negative = "-"
+        let Negative = "*(-1)"
+        let Minus = ("-")
         let AlreadyInDisplay = NumericDisplay.text
         NumericDisplay.text = AlreadyInDisplay! + Negative
+        let Solution = Answer.text
+        Answer.text = Minus + Solution!
     }
     
     
